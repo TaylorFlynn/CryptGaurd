@@ -28,7 +28,7 @@ const Auth = () => {
     const DemoSubmit = async (e) => {
         e.preventDefault();
         
-        const URL = 'https://cryptgaurd.herokuapp.com'
+        const URL = 'https://cryptgaurd.herokuapp.com/auth'
         try{
             const { data: { token, userId, hashedPassword, fullName, username, phoneNumber, avatarURL} } = await axios.post(`${URL}/login`, {
                 DemoUser: "DemoUser"
@@ -49,7 +49,7 @@ const Auth = () => {
 
         const { username, password, phoneNumber, avatarURL} = form;
 
-        const URL = 'https://cryptgaurd.herokuapp.com';
+        const URL = 'https://cryptgaurd.herokuapp.com/auth';
 
         const { data: { token, userId, hashedPassword, fullName } } = await axios.post(`${URL}/${isSignup ? 'signup' : 'login'}`, {
             username, password, fullName: form.fullName, phoneNumber, avatarURL,
