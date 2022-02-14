@@ -8,12 +8,12 @@
       "type": "image/x-icon"
     },
     {
-      "src": "CrypgtGaurd_192.png",
+      "src": "CryptGaurd_192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "CryptGaurd512.png",
+      "src": "CryptGaurd_512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
